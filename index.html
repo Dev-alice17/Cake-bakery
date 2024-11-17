@@ -1,621 +1,460 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 
 <head>
-    <meta charset="utf-8">
-    <title>202251212cake</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="Free HTML Templates" name="keywords">
-    <meta content="Free HTML Templates" name="description">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="description" content="Coffe Shop Website">
+  <meta name="CCBot" content="nofollow">
+  <title>Ocean</title>
 
-    <!-- Favicon -->
-    <link href="gambar/dll.jpeg" rel="icon">
+  <!-- Sweet Alert -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.min.css">
 
-    <!-- Google Web Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Oswald:wght@500;600;700&family=Pacifico&display=swap" rel="stylesheet"> 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,400;0,700;1,700&display=swap"
+    rel="stylesheet">
 
-    <!-- Icon Font Stylesheet -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+  <!-- Icons -->
+  <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/fontawesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.1/css/all.min.css">
 
-    <!-- Libraries Stylesheet -->
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <!-- Style -->
+  <link rel="stylesheet" href="style.css">
 
-    <!-- Customized Bootstrap Stylesheet -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-
-    <!-- Template Stylesheet -->
-    <link href="css/style.css" rel="stylesheet">
+  <!-- Logo Website -->
+  <link rel="icon" href="img/logo-coffe.svg">
 </head>
 
 <body>
-    <!-- Topbar Start -->
-    <div class="container-fluid px-0 d-none d-lg-block">
-        <div class="row gx-0">
-            <div class="col-lg-4 text-center bg-secondary py-3">
-                <div class="d-inline-flex align-items-center justify-content-center">
-                    <i class="bi bi-envelope fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Email Us</h6>
-                        <span>202251212@std.umk.ac.id</span>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center bg-primary border-inner py-3">
-                <div class="d-inline-flex align-items-center justify-content-center">
-                    <a href="index.html" class="navbar-brand">
-                        <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-dark me-3"></i>202251212Cake</h1>
-                    </a>
-                </div>
-            </div>
-            <div class="col-lg-4 text-center bg-secondary py-3">
-                <div class="d-inline-flex align-items-center justify-content-center">
-                    <i class="bi bi-phone-vibrate fs-1 text-primary me-3"></i>
-                    <div class="text-start">
-                        <h6 class="text-uppercase mb-1">Call Us</h6>
-                        <span>085-886-031-844</span>
-                    </div>
-                </div>
-            </div>
-        </div>
+  <!-- Navbar Start -->
+  <nav class="navbar">
+    <a href="#home"  rel="noreferrer noopener"
+      class="navbar-logo primary-gradient">Ocean<span>Breewc</span> </a>
+
+    <div class="navbar-nav">
+      <a href="#home" class="primary-gradient-hover">Home</a>
+      <a href="#about" class="primary-gradient-hover">Tentang Kami</a>
+      <a href="#heading_outlet" class="primary-gradient-hover">Maps</a>
+      <a href="#products" class="primary-gradient-hover">Produk</a>
+      <a href="#kontak" class="primary-gradient-hover">Kontak</a>
     </div>
-    <!-- Topbar End -->
 
-
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark shadow-sm py-3 py-lg-0 px-3 px-lg-0">
-        <a href="index.html" class="navbar-brand d-block d-lg-none">
-            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-primary me-3"></i>202251212Cake</h1>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-            <div class="navbar-nav ms-auto mx-lg-auto py-0">
-                <a href="index.html" class="nav-item nav-link active">Home</a>
-                <a href="about.html" class="nav-item nav-link">Layanan</a>
-                <a href="menu.html" class="nav-item nav-link">Produk</a>
-                </div>
-                <a href="contact.html" class="nav-item nav-link">Pemesanan</a>
-            </div>
+    <div class="navbar-extra">
+      <a id="search-button"><i class="fa-solid fa-magnifying-glass icon"></i></a>
+      <a id="shopping-bag-button">
+        <div id="shopping-bag-count" class="hidden">
+          0
         </div>
-    </nav>
-    <!-- Navbar End -->
+        <i class="fa-solid fa-cart-shopping icon shopping-bag-icon"></i>
+      </a>
+      <a id="hamburger-menu">
+        <i class="fa-solid fa-bars icon"></i>
+      </a>
+    </div>
 
+    <!-- Search From Start -->
+    <div class="search-form" id="search-results">
+      <input type="search" id="search-box" placeholder="Cari..." oninput="search()">
+      <label for="search-box">
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </label>
+    </div>
+    <!-- Search From End -->
 
-    <!-- Hero Start -->
-    <div class="container-fluid bg-primary py-5 mb-5 hero-header">
-        <div class="container py-5">
-            <div class="row justify-content-start">
-                <div class="col-lg-8 text-center text-lg-start">
-                    <h1 class="font-secondary text-primary mb-4">Super Crispy</h1>
-                    <h1 class="display-1 text-uppercase text-white mb-4">202251212Cake</h1>
-                    <h1 class="text-uppercase text-white">The Best Cake In Pati</h1>
-                    <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                    </div>
-                </div>
+    <!-- Shopping Bag Start -->
+    <div class="shopping-bag">
+
+      <div class="cart-item hidden" id="cart-item-template">
+        <img src="img/product/product-1.webp" alt="product-1" loading="lazy">
+        <div class="item-detail">
+          <div class="item-name">
+            <h3>Product 1</h3>
+            <button class="fa-regular fa-trash-can remove-item"></button>
+          </div>
+          <div class="prices-quantity">
+            <div class="item-price">IDR 30K</div>
+            <div class="price-calc">
+              X
+              <button class="btn-qty qty-sub">
+                <i class="fa-solid fa-minus"></i>
+              </button>
+              <input type="number" pattern="^[0-9]" maxlength="2" value="1" class="item-quantity">
+              <button class="btn-qty qty-add">
+                <i class="fa-solid fa-plus"></i>
+              </button>
+              =
             </div>
+            <div class="item-price-total">Rp 30.000</div>
+          </div>
         </div>
-    </div>
-    <!-- Hero End -->
+      </div>
 
+      <div class="shopping-bag-empty">
+        <p>Keranjang Kosong</p>
+      </div>
 
-    <!-- Video Modal Start -->
-    <div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content rounded-0">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Youtube Video</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <!-- 16:9 aspect ratio -->
-                    <div class="ratio ratio-16x9">
-                        <iframe class="embed-responsive-item" src="" id="video" allowfullscreen allowscriptaccess="always"
-                            allow="autoplay"></iframe>
-                    </div>
-                </div>
-            </div>
+      <div class="shopping-bag-inner">
+      </div>
+
+      <div class="shopping-bag-footer">
+        <div class="totalsP">
+          Total Harga :
+          <span id="current-items-total">Rp 23.456</span>
         </div>
-    </div>
-    <!-- Video Modal End -->
+        <hr>
+        <form action="#" id="co-form">
+          <h4>Customer Detail</h4>
+        
+          <!-- Nama -->
+          <label for="names">
+            <span>Nama</span>
+            <input type="text" name="names" id="names" placeholder="Budi" minlength="5" maxlength="30" required
+              pattern="[A-Za-z ]+" title="Masukkan nama yang valid (huruf alfabet dan spasi)" spellcheck="false">
+          </label>
+        
+          <!-- Alamat -->
+          <label for="alamat">
+            <span>Alamat</span>
+            <input type="text" id="alamat" placeholder="Alamat Pengiriman" required />
+          </label>
+          
+        
+          <!-- Nomor HP -->
+          <label for="phone">
+            <span>Nomor HP</span>
+            <input type="tel" name="phone" id="phone" placeholder="08xxxxxxxxx" required pattern="\d{10,15}"
+              title="Masukkan nomor HP yang valid" spellcheck="false">
+          </label>
+        
+          <!-- Tombol Checkout -->
+          <button class="co-btn disabled" id="co-btn" value="checkout" name="checkout" disabled>
+            Check Out
+          </button>
+        </form>
+        
+    <!-- Shopping Bag End -->
 
+  </nav>
+  <!-- Navbar End -->
 
-    <!-- About Start -->
-    <div class="container-fluid pt-5">
-        <div class="container">
-            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">About Us</h2>
-                <h1 class="display-4 text-uppercase">Welcome To 202251212Cake</h1>
-            </div>
-            <div class="row gx-5">
-                <div class="col-lg-5 mb-5 mb-lg-0" style="min-height: 400px;">
-                    <div class="position-relative h-100">
-                        <img class="position-absolute w-100 h-100" src="gambar/about.jfif" style="object-fit: cover;">
-                    </div>
-                </div>
-                <div class="col-lg-6 pb-5">
-                    <h4 class="mb-4">Toko 202251212cake</h4>
-                    <p class="mb-5">Tempat terbaik untuk menikmati roti fresh dan lezat! Kami menyediakan berbagai pilihan roti yang dibuat dengan bahan berkualitas tinggi dan resep yang sudah teruji. Dari roti manis hingga roti gurih, semua produk kami dipanggang dengan penuh cinta setiap hari. Kunjungi kami untuk merasakan kelezatan yang tak terlupakan dan nikmati layanan pelanggan yang ramah. Pesan roti favorit Anda secara online dan dapatkan pengiriman langsung ke rumah</p>
-                    <div class="row g-5">
-                            </div>
-                            <h4 class="text-uppercase">Visi</h4>
-                            <p class="mb-0">Menjadi pilihan utama pelanggan untuk kue berkualitas tinggi dengan cita rasa yang autentik dan tampilan yang menggugah selera</p>
-                        </div>
-                            </div>
-                            <h4 class="mb-4">Misi</h4>
-                            <p class="mb-5">Menyediakan kue berkualitas tinggi dengan bahan baku terbaik, inovasi rasa yang mengikuti tren, serta desain yang menarik, sambil menjaga proses produksi yang higienis dan ramah lingkungan, untuk memberikan pengalaman terbaik bagi pelanggan</p>
-                            <div class="row g-5">
-                        </div>
-                    </div>
-                </div>
-            </div>
+  <!-- Hero Section Start -->
+  <section class="hero" id="home">
+    <main class="content">
+      <h1>Yuk, nikmati lezatnya sepotong <span class="primary-gradient">roti</span></h1>
+      <p>
+        Rasakan kelembutan roti pilihan kami, <br>
+        sambil meresapi kehangatan suasana yang memanjakan
+      </p>
+      <a href="#products" class="cta btn"><b><i>Pesan Sekarang</i></b></a>
+    </main>
+
+  <!-- music -->
+
+  <div class="card">
+    <div class="bg uwu"></div>
+    <div class="bg"></div>
+    <div class="audio-player">
+      <div class="bg"></div> <!-- Elemen untuk efek warna-warni -->
+      <div class="album-cover"></div>
+      <div class="player-controls">
+        <div class="song-info">
+          <div class="song-title">불장난 (PLAYING WITH FIRE) M-V</div>
+          <p class="artist">BLACKPINK</p>
         </div>
-    </div>
-    <!-- About End -->
-
-
-    <!-- Facts Start -->
-    <div class="container-fluid bg-img py-5 mb-5">
-        <div class="container py-5">
-            <div class="row gx-5 gy-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-star text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Resep Baru</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">12</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-users text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Spesialis Roti Pilihan</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">98</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-check text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Produk Yang Tersedia</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">190</h1>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="d-flex">
-                        <div class="bg-primary border-inner d-flex align-items-center justify-content-center mb-3" style="width: 60px; height: 60px;">
-                            <i class="fa fa-mug-hot text-white"></i>
-                        </div>
-                        <div class="ps-4">
-                            <h6 class="text-primary text-uppercase">Kepuasan pelanggan</h6>
-                            <h1 class="display-5 text-white mb-0" data-toggle="counter-up">90</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="progress-bar">
+          <div class="progress" id="progress"></div>
         </div>
-    </div>
-    <!-- Facts End -->
-
-
-    <!-- Products Start -->
-    <div class="container-fluid about py-5">
-        <div class="container">
-            <div class="section-title position-relative text-center mx-auto mb-5 pb-3" style="max-width: 600px;">
-                <h2 class="text-primary font-secondary">Menu & Pricing</h2>
-                <h1 class="display-4 text-uppercase">Explore Our Cakes</h1>
-            </div>
-            <div class="tab-class text-center">
-                <ul class="nav nav-pills d-inline-flex justify-content-center bg-dark text-uppercase border-inner p-4 mb-5">
-                    <li class="nav-item">
-                        <a class="nav-link text-white active" data-bs-toggle="pill" href="#tab-1">Birthday</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-2">Wedding</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link text-white" data-bs-toggle="pill" href="#tab-3">Custom</a>
-                    </li>
-                </ul>
-                <div class="tab-content">
-                    <div id="tab-1" class="tab-pane fade show p-0 active">
-                        <div class="row g-3">
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/ultah.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">90k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Awan</h5>
-                                        <span>Roti Ulang tahun tema awan dengan hiasan topper </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/ultah2.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">70k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Biasa</h5>
-                                        <span>Roti ulang tahun custom tanpa topper</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/ultah3.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">75k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Custom</h5>
-                                        <span>Roti ulang tahun dengan custom kalimat dengan hiasan topper</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/ultah4.jfif" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">100k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Rainbow</h5>
-                                        <span>Roti Ulang tahun dengan tema rainbow dengan hiasa topper</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/ultah5.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">180k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Angka</h5>
-                                        <span>Roti ulang tahun sesuai dengan angka yang di inginkan</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/ultah6.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">150k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Coklat</h5>
-                                        <span>Roti ulang tahun rasa coklat dengan hiasan buah </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-2" class="tab-pane fade show p-0">
-                        <div class="row g-3">
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/wd1.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">290k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding 1</h5>
-                                        <span>Roti pernikahan 3 tingkat dengan hiasan bunga</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/wd2.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">240k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding 2</h5>
-                                        <span>Roti pernikahan 2 tingkat dengan hiasan topper</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/wd3.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">190k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding 3</h5>
-                                        <span>Roti pernikahan 2 tingkat dengan hiasan replika cincin pernikahan</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/wd4.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">370k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding 4</h5>
-                                        <span>Roti pernikahan 4 tingkat dengan hiasan bunga</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/wd5.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">200k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding 5</h5>
-                                        <span>Roti pernikahan 2 tingkat dengan hiasan topper</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/wd6.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">398k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Wedding 6</h5>
-                                        <span>Roti pernikahan 5 tingkat dengan full hiasan bunga</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div id="tab-3" class="tab-pane fade show p-0">
-                        <div class="row g-3">
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/1.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">10k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Mini Cake</h5>
-                                        <span>Roti kecil dengan berbagai rasa</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/2.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">10k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Roti rolle</h5>
-                                        <span>Roti roll dengan berbagai macam rasa</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/3.jfif" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">12k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Croissant Coklat</h5>
-                                        <span>Roti Croissant rasa coklat dengan toping almond </span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/4.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">12k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Roti Sosis</h5>
-                                        <span>Roti varian sosis dengan toping saos dan mayo</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/5.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">15k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Gulung abon</h5>
-                                        <span>Roti gulung dengan perpaduan manis dan gurih abon</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="d-flex h-100">
-                                    <div class="flex-shrink-0">
-                                        <img class="img-fluid" src="gambar/6.jpeg" alt="" style="width: 150px; height: 85px;">
-                                        <h4 class="bg-dark text-primary p-2 m-0">15k</h4>
-                                    </div>
-                                    <div class="d-flex flex-column justify-content-center text-start bg-secondary border-inner px-4">
-                                        <h5 class="text-uppercase">Roti Abon</h5>
-                                        <span>Roti isi abon</span>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="controls-and-time">
+          <div class="buttons">
+            <button class="play-btn" onclick="playAudio()">
+              <svg viewBox="0 0 16 16" class="bi bi-play-fill" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: white">
+                <path fill="white" d="m11.596 8.697-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z"></path>
+              </svg>
+            </button>
+            <button class="pause-btn" onclick="pauseAudio()">
+              <svg viewBox="0 0 16 16" class="bi bi-pause-fill" fill="currentColor" height="16" width="16" xmlns="http://www.w3.org/2000/svg" style="color: white">
+                <path fill="white" d="M5.5 3.5A1.5 1.5 0 0 1 7 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5zm5 0A1.5 1.5 0 0 1 12 5v6a1.5 1.5 0 0 1-3 0V5a1.5 1.5 0 0 1 1.5-1.5z"></path>
+              </svg>
+            </button>
+          </div>
+          <p id="current-time">0:00</p>
         </div>
+      </div>
     </div>
-    <!-- Products End -->
-
-
-
-    <!-- Service Start -->
-    <div class="container-fluid service position-relative px-5 mt-5" style="margin-bottom: 135px;">
-        <div class="container">
-            <div class="row g-5">
-                <div class="col-lg-4 col-md-6">
-                    <div class="bg-primary border-inner text-center text-white p-5">
-                        <h4 class="text-uppercase mb-3">Birthday Cake</h4>
-                        <p>Suka dengan dekorasi roti ulang tahun?kamu bisa request tema apa saja lhoo!</p>
-                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="bg-primary border-inner text-center text-white p-5">
-                        <h4 class="text-uppercase mb-3">Wedding Cake</h4>
-                        <p>Jika ada tema tertentu pada acara anda,bisa menyesuaikan temanyaa</p>
-                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="bg-primary border-inner text-center text-white p-5">
-                        <h4 class="text-uppercase mb-3">Lainnya</h4>
-                        <p>Berbagai macam jenis roti manis maupun asin</p>
-                        <a class="text-uppercase text-dark" href="">Read More <i class="bi bi-arrow-right"></i></a>
-                    </div>
-                </div>
-                <div class="col-lg-12 col-md-6 text-center">
-                    <h1 class="text-uppercase text-light mb-4">Nikmati diskon hingga 10% untuk pembelian bulan ini</h1>
-                    <a href="" class="btn btn-primary border-inner py-3 px-5">Pesan Sekarang</a>
-                </div>
-            </div>
-        </div>et d
+          
     </div>
-    <!-- Service Start -->
-
-
-    <!-- Offer Start -->
-    <div class="container-fluid bg-offer my-5 py-5">
-        <div class="container py-5">
-            <div class="row gx-5 justify-content-center">
-                <div class="col-lg-7 text-center">
-                    <div class="section-title position-relative text-center mx-auto mb-4 pb-3" style="max-width: 600px;">
-                        <h2 class="text-primary font-secondary">Spesialis Roti Pilihan</h2>
-                        <h1 class="display-4 text-uppercase text-white">Super Crispy</h1>
-                    </div>
-                    <p class="text-white mb-4">Rasakan kelezatan roti istimewa lembut buatan kami, dibuat dengan bahan-bahan alami dan resep turun-temurun</p>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- Offer End -->
+  </div>
+  
+  
+  <!-- Audio element -->
+  <audio id="audio-player" autoplay loop>
+    <source src="asset/song/BLACKPINK - '불장난 (PLAYING WITH FIRE)' M-V.mp3" type="audio/mp3">
+    Your browser does not support the audio element.
+  </audio>
   
 
-     <!-- Footer Start -->
-     <div class="container-fluid bg-dark bg-img text-secondary" style="margin-top: 235px">
-        <div class="container">
-            <div class="row gx-5">
-                <div class="col-lg-4 col-md-6 mt-lg-n5">
-                    <div class="d-flex flex-column align-items-center justify-content-center text-center h-100 bg-primary border-inner p-4">
-                        <a href="index.html" class="navbar-brand">
-                            <h1 class="m-0 text-uppercase text-white"><i class="fa fa-birthday-cake fs-1 text-dark me-3"></i>202251212Cake</h1>
-                        </a>
-                        <p class="mt-3">Berdiri sejak 2023, menghadirkan beragam kue premium dengan cita rasa unik dan berkualitas tinggi, dibuat dengan bahan pilihan untuk momen spesial Anda</p>
-                    </div>
-                </div>
-                <div class="col-lg-8 col-md-6">
-                    <div class="row gx-5">
-                        <div class="col-lg-4 col-md-12 pt-5 mb-5">
-                            <h4 class="text-primary text-uppercase mb-4">Layanan</h4>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-geo-alt text-primary me-2"></i>
-                                <p class="mb-0">Jl. Pemuda No.243 E, Pati Wetan/Dosoman, Pati Wetan, Kec. Pati, Kabupaten Pati, Jawa Tengah 59119</p>
-                            </div>
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-envelope-open text-primary me-2"></i>
-                                <p class="mb-0">202251212@std.umk.ac.id</p>
-                            </div>
-                            <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Link ke WhatsApp</title>
-</head>
-<body>
-    <p>Untuk menghubungi kami, klik tombol berikut:</p>
-    <a href="https://wa.me/085886031844" target="_blank">
-        <button style="padding: 10px 20px; background-color: #25D366; color: white; border: none; border-radius: 5px;">
-            Chat via WhatsApp
-        </button>
-    </a>
-</body>
-</html>
 
-                            <div class="d-flex mb-2">
-                                <i class="bi bi-telephone text-primary me-2"></i>
-                                <p class="mb-0">085-886-031-844</p>
-                            </div>
-                            <div class="d-flex mt-4">
-                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 me-2" href="#"><i class="fab fa-twitter fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 me-2" href="#"><i class="fab fa-facebook-f fw-normal"></i></a>
-                                <a class="btn btn-lg btn-primary btn-lg-square border-inner rounded-0 me-2" href="#"><i class="fab fa-linkedin-in fw-normal"></i></a>
-                            </div>
-                        </div>
-                        <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Maps</title>
-</head>
-<body>
-    <p>Untuk melihat lokasi kami di Google Maps, klik tombol berikut:</p>
-    
-    <!-- Gantilah URL dengan koordinat atau alamat yang sesuai -->
-    <a href="https://maps.app.goo.gl/PPq4SaaLrcQbJgCj8" target="_blank">
-        <button style="padding: 10px 20px; background-color: #4285F4; color: white; border: none; border-radius: 5px;">
-            Lihat di Google Maps
-        </button>
-    </a>
-</body>
-</html>
-                    </div>
-                </div>
+  <!-- end music -->
+  </section>
+  <!-- Hero Section End -->
+
+  <!-- video -->
+  <section id="video" class="video">
+    <h2><span class="primary-gradient">Video Perkenalan</span></h2>
+    <div class="video1">
+        <video src="asset/video/CINEMATIC VIDEO PRODUK KUE (KWEKAMI).mp4" controls></video>
+    </div>
+</section>
+
+  <!-- end video -->
+  <!-- About Section Start -->
+  <section id="about" class="about">
+    <h2><span class="primary-gradient">Tentang Kami</span></h2>
+    <section id="aboutus">
+      <div class="layar-dalam">
+        <p class="ringkasan">
+          OceanBreewc, pilihan roti terbaik untukmu!
+        </p>
+        <div class="konten-isi">
+          <p>
+            OceanBreewc adalah toko roti yang berdiri sejak tahun 2020, 
+            dengan outlet pertama di Semarang. Kami hadir dengan roti-roti berkualitas
+            yang dibuat dengan cinta dan bahan-bahan terbaik. Setiap gigitan 
+            akan membawa kenikmatan roti yang lembut dan nikmat!
+        </div>
+      </div>
+    </section>
+    <div class="row">
+      <section class="abuabu" id="support">
+        <div class="layar-dalam support">
+          <div>
+            <img src="asset/jam.png" />
+            <h6>Jam Operasional</h6>
+            <p>
+              Kami buka setiap hari pada jam berikut:
+              <br> Senin - Jumat : 07.00 - 20.00 <br>
+              Sabtu - minggu : 08.00 - 18.00 <br>
+            </p>
+          </div>
+          <div>
+            <img src="asset/roti.png" />
+            <h6>Varian Roti Terlengkap</h6>
+            <p>
+              Kami menawarkan berbagai pilihan roti, mulai dari roti manis, roti tawar,
+              hingga roti isi dengan topping favorit Anda.
+            </p>
+          </div>
+          <div>
+            <img src="asset/toko.png" />
+            <h6>Outlet Kami</h6>
+            <p>
+              Outlet 1: Jalan Taman Bojana No.16, Kudus <br>
+              Outlet 2: Jl. Raya Titan Asri No.34, Kota Malang<br>
+              Outlet 3: Jl. Mutiara Kav 38 No.34, Malang
+            </p>
+          </div>
+        </div>
+      </section>
+    </div>
+  </section>
+  <section id="gallery">
+    <div><img src="asset/foto1.jpg" /></div>
+    <div><img src="asset/foto2.jpg" /></div>
+    <div><img src="asset/foto3.jpg" /></div>
+    <div><img src="asset/foto4.jpg" /></div>
+    <div><img src="asset/foto5.jpg" /></div>
+    <div><img src="asset/foto6.jpg" /></div>
+    <div><img src="asset/foto7.jpg" /></div>
+    <div><img src="asset/foto8.jpg" /></div>
+  </section>
+
+  
+  <div id="heading_outlet"></div>
+  <section class="outlet" id="outlet">
+    <h2><span class="primary-gradient">Maps Outlet</span></h2>
+    <p>Berikut adalah maps dari outlet-outlet kami!</p>
+
+    <div class="container-maps">
+        <!-- Outlet 1 -->
+        <div class="row">
+            <h2><span>Outlet 1</span></h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d990.42393401771!2d110.84235530652963!3d-6.806817563122276!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e70c4c528a21a77%3A0xcbb006a30f51dcd2!2sJoy%20Cake%20%26%20Bakery!5e0!3m2!1sid!2sid!4v1731075046396!5m2!1sid!2sid" 
+            allowfullscreen="" title="Peta Lokasi Outlet 2" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            <!-- Kontak Admin Outlet 1 -->
+            <div class="contact-admin">
+                <h2>Kontak Admin Outlet 1</h2>
+                <p>Telepon: +6285256419818</p>
+                <p>Email: oceanscorpion7@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Outlet 2 -->
+        <div class="row">
+            <h2><span>Outlet 2</span></h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.70090932735!2d112.65275714476962!3d-7.957361089942129!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd6292966b8afe3%3A0x3c1627194930513c!2sJoy%20cake%20n%20bakery!5e0!3m2!1sid!2sid!4v1731075133908!5m2!1sid!2sid"
+            allowfullscreen="" title="Peta Lokasi Outlet 2" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            <!-- Kontak Admin Outlet 2 -->
+            <div class="contact-admin">
+                <h2>Kontak Admin Outlet 2</h2>
+                <p>Telepon: +6285134088127</p>
+                <p>Email: oceanalfatih17@gmail.com</p>
+            </div>
+        </div>
+
+        <!-- Outlet 3 -->
+        <div class="row">
+            <h2><span>Outlet 3</span></h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1975.5928237127584!2d112.59453063113182!3d-7.979754038931523!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e7883090f85126d%3A0x20f367831a8c56d0!2sJoy%20bakery%20%26%20Group!5e0!3m2!1sid!2sid!4v1731075230988!5m2!1sid!2sid" 
+            allowfullscreen="" title="Peta Lokasi Outlet 2" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="map"></iframe>
+            <!-- Kontak Admin Outlet 3 -->
+            <div class="contact-admin">
+                <h2>Kontak Admin Outlet 3</h2>
+                <p>Telepon: +625255139577</p>
+                <p>Email: 202251264@std.umk.ac.id</p>
             </div>
         </div>
     </div>
-    <div class="container-fluid text-secondary py-4" style="background: #111111;">
-        <div class="container text-center">
-            <p class="mb-0">&copy; <a class="text-white border-bottom" href="#">Sri Lutfiningsih</a> 202251212. 
-            </div>
+</section>
+
+
+
+  <!-- About Section End -->
+
+
+   <!-- Product Section Start -->
+   <section class="products" id="products">
+    <h2><span class="primary-gradient">Produk Kami</span></h2>
+
+    <div class="product-card hidden" id="product-card-template">
+      <div class="product-card-inner">
+        <div class="product-icons">
+          <button class="shopping-bag-btn" data-product="biji_toraja" aria-label="Add to Shopping Bag">
+            <i class="fa-solid fa-cart-shopping"></i>
+          </button>
+          <button class="item-detail-button" data-product="biji_toraja" aria-label="View Item Detail">
+            <i class="fa-solid fa-info"></i>
+          </button>
         </div>
+        <div class="product-image">
+          <img src="asset/ultah.png" alt="product-1" loading="lazy">
+        </div>
+        <div class="products-content">
+          <h3>Kue Ulang Tahun</h3>
+          <div class="product-stars">
+            <i class="fa-solid fa-star star-full"></i>
+            <i class="fa-solid fa-star star-full"></i>
+            <i class="fa-solid fa-star star-full"></i>
+            <i class="fa-solid fa-star star-full"></i>
+            <i class="fa-solid fa-star star-full"></i>
+          </div>
+          <div class="product-price" data-diskon="false">
+            <span class="product-price-discount">IDR 1500K</span>
+            <span class="product-price-base">IDR 170K</span>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- Footer End -->
+    <div class="row" id="product-list">
+    </div>
+  </section>
 
+  <!-- Product Section End -->
 
-    <!-- Back to Top -->
-    <a href="#" class="btn btn-primary border-inner py-3 fs-4 back-to-top"><i class="bi bi-arrow-up"></i></a>
+  <!-- Contact Section Start -->
 
+  <!-- Contact Section End -->
 
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/counterup/counterup.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+  <!-- Footer Start -->
+   <section id="kontak">
 
-    <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+   </section>
+  <footer>
+    <div class="wrapper">
+      <ul>
+        <li class="item-social">
+          <a href="https://www.instagram.com/" target="_blank" rel="noreferrer noopener" aria-label="Instagram">
+            <i class="fa-brands fa-instagram"></i>
+          </a>
+        </li>
+        <li class="item-social">
+          <a href="https://twitter.com/" target="_blank" rel="noreferrer noopener" aria-label="Twitter">
+            <i class="fa-brands fa-x-twitter"></i>
+          </a>
+        </li>
+        <li class="item-social">
+          <a href="https://www.facebook.com/" target="_blank" rel="noreferrer noopener" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f"></i>
+          </a>
+        </li>
+        <li class="item-social">
+          <a href="https://www.tiktok.com/id-ID/" target="_blank" rel="noreferrer noopener" aria-label="TikTok">
+            <i class="fa-brands fa-tiktok"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="links">
+      <a href="#home">Home</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#products">Produk</a>
+    </div>
+
+    <div class="credit">
+      <p>Created by <a href="https://github.com/Zevhys" target="_blank" rel="noreferrer noopener">Ocean Arif Raja</a> |
+        Copyright &copy; 2024</p>
+    </div>
+  </footer>
+  <!-- Footer End -->
+
+  <!-- Modal Box Item Detail Start -->
+  <div class="modal" id="item-detail-modal">
+    <div class="modal-container">
+      <button class="close-icon">
+        <i class="fa-solid fa-circle-xmark"></i>
+      </button>
+      <div class="modal-content">
+        <div class="product-content">
+          <img src="img/product/product-1.webp" alt="product-1" id="product-img" loading="lazy">
+          <h3 id="product-name">Product 1</h3>
+          <p id="product-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque incidunt repellendus ad aperiam <br>saepe
+            ipsam
+            voluptate placeat in ullam, tenetur eligendi, voluptates porro inventore voluptatem.
+          </p>
+          <div class="product-stars" id="product-rating">
+            <i class="fa-solid fa-star star-full"></i>
+            <i class="fa-solid fa-star star-full"></i>
+            <i class="fa-solid fa-star star-full"></i>
+            <i class="fa-solid fa-star star-full"></i>
+            <i class="fa-solid fa-star star-full"></i>
+          </div>
+          <div class="product-price" id="product-prices" data-diskon="true">
+            <span id="product-price-discount" class="product-price-discount">IDR 30K</span>
+            <span id="product-price" class="product-price-base">IDR 55K</span>
+          </div>
+          <button class="add-to-cart btn">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <span><b>Masukkan Keranjang</b></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Box Item Detail End -->
+
+  <!-- Sweet Alert -->
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.10.3/dist/sweetalert2.all.min.js"></script>
+
+  <!-- JavaScript -->
+  <script src="daftar_kopi.js"></script>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
